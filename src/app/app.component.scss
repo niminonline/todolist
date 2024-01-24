@@ -1,0 +1,11 @@
+@import '../styles.scss';
+
+.main-body{
+background-image:var(--gradientColours);
+min-height: 800px;
+}
+
+.test{
+    height: 100px;
+    width: 100px;
+}

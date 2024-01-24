@@ -1,1 +1,132 @@
 /* You can add global styles to this file, and also import other style files */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+@import '../src/app/core/constants.scss';
+@import '~bootstrap-icons/font/bootstrap-icons.css';
+
+
+
+body {
+    background-image: var(--gradientColours);
+    font-family: "Raleway", sans-serif;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 20px;
+    width: 100%;
+    min-height: 100vh;
+  }
+  
+  .floatingReset {
+    color: var(--resetBtnColor);
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    font-size: 25px;
+    background-color: var(--floatingBtnBgColor);
+    border: none;
+    box-shadow: 0 0 10px 0 black;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    text-align: center;
+    z-index: 1;
+    transition: 1s;
+    transform: rotate(-60deg) scale(1);
+  }
+  .floatingReset:hover {
+    transform: rotate(60deg) scale(1.1);
+    transition: 1s;
+  }
+  
+  .listGroupDiv {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    min-height: 50vh;
+  }
+  
+  .listDiv {
+    width: 450px;
+    border-radius: 5px;
+    margin-top: 20px;
+    padding-bottom: 20px;
+  }
+  .DoneItem {
+    background-color: var(--DoneItemColor);
+  }
+  .OGItem {
+    background-color: var(--OGItemColor);
+    transition: color 1s ease-in-out;
+  }
+  
+  .DroppedItem {
+    background-color: var(--DroppedItemColor);
+  }
+  
+  .transpButtons {
+    background-color: transparent;
+    border: transparent;
+    font-size: 1.5rem;
+  }
+  .transpButtons:hover {
+    transform: scale(1.2);
+  }
+  
+  .listTitle {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-top: 10px;
+  }
+  
+  .itemDiv {
+    display: flex;
+    background-color: var(--itemDivbgcolor);
+    border-radius: 5px;
+    margin: 15px 5px 15px;
+  }
+  .itemDiv:hover {
+    transform: scale(1.05);
+  }
+  
+  .itemContent {
+    flex: 1;
+    text-align: left;
+    margin: 2px 0px 0px 5px;
+    padding: 0px;
+  }
+  
+  .itemTitle {
+    margin: 0px;
+    font-size: 1.3rem;
+  }
+  
+  .itemDate {
+    font-size: 12px;
+    font-family: "Ubuntu", sans-serif;
+  }
+  
+  .strike {
+    text-decoration: line-through;
+  }
+  /* .strike:hover{
+    text-decoration:none;
+  } */
+  .blurEffect {
+    filter: blur(1px);
+  }
+  .blurEffect:hover {
+    filter: none;
+  }
+  .droppedItemDiv .itemContent:hover .itemTitle {
+    text-decoration: none;
+  }
+  
+  .editFieldDiv {
+    padding-top: 8px;
+    border-radius: 5px;
+    display: flex;
+  }
+  

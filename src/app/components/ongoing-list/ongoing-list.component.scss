@@ -1,0 +1,62 @@
+.ogButtons {
+    display: flex;
+    align-items: center;
+  }
+  
+  .priority {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .priorityUp {
+    color: var(--priorityUpColor);
+  }
+  .priorityDown {
+    color: var(--priorityDownColor);
+  }
+  
+  .priorityNum {
+    margin: 0px;
+    font-size: 1.4rem;
+    position: relative;
+    top: -6px;
+    height: 22px;
+    font-weight: bold;
+  }
+  
+  .editPopup {
+    width: 350px;
+    height: 100px;
+    border-radius: 10px;
+    background-color: var(--popUpBgColor);
+    padding: 0px 5px 20px 20px;
+    left: 0;
+    right: 0;
+    box-shadow: 0 0 10px 0px black;
+    z-index: 1;
+  
+  }
+  
+  .saveBtn {
+    color: var(--saveBtnColor);
+  }
+  
+  .closeBtnDiv {
+    text-align: right;
+  }
+  
+  .closeBtn {
+    margin: auto;
+    font-size: medium;
+    position: relative;
+  }
+  
+  .editPopupText {
+    border-radius: 5px;
+    border: 1px solid var(--popUpTextBorder);
+    outline: none;
+    margin-right: 5px;
+    flex: 1;
+    float: inline-end;
+  }
+  
